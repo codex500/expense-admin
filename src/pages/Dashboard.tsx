@@ -41,7 +41,7 @@ export default function Dashboard() {
 
       const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
       const { data } = await axios.post(
-        `${apiUrl}/api/v3/notifications/admin/broadcast`,
+        `${apiUrl}/api/notifications/admin/broadcast`,
         payload,
         {
           headers: { Authorization: `Bearer ${token}` }
