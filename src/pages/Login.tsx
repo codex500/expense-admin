@@ -6,8 +6,8 @@ import { ShieldCheck, Mail, Lock, Loader2 } from 'lucide-react';
 
 export default function Login() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('admi.noti@trackifyapp.space');
-  const [password, setPassword] = useState('admin@Trackify2026');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -61,7 +61,7 @@ export default function Login() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 pl-10 pr-4 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all placeholder:text-slate-600"
-                placeholder="admin@trackifyapp.space"
+                placeholder="example@gmail.com"
                 required
               />
             </div>
